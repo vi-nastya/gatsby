@@ -9,9 +9,8 @@ const GLOBAL_GATSBY_CLI_LOCATION = (process.env.GLOBAL_GATSBY_CLI_LOCATION = fs.
 ))
 
 module.exports = {
-  ...baseConfig,
-  globalSetup: "<rootDir>/integration-tests/gatsby-cli/jest.boot.js",
-  rootDir: `../../`,
+  testPathIgnorePatterns: [`/node_modules/`, `__tests__/fixtures`, `.cache`],
+  globalSetup: "<rootDir>/jest.boot.js",
   globals: {
     GLOBAL_GATSBY_CLI_LOCATION,
   },
