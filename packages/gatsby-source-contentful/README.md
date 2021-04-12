@@ -203,7 +203,7 @@ On Contentful, a "Long text" field uses Markdown by default. The field is expose
 {
   contentfulCaseStudy {
     body {
-      body
+      raw
     }
   }
 }
